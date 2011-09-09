@@ -141,7 +141,7 @@ def build_vm(hostname, root_password, nbd_dev, nbd_part, mountpt, vmimage,
 
     set_network(mountpt, ip, netmask, gateway)
     set_hostname(mountpt, hostname)
-    set_password(mountpt, 'root', password)
+    set_password(mountpt, 'root', root_password)
 
     # TOOD: need to specify vulnerabilities to install
     install_vulns(mountpt)
